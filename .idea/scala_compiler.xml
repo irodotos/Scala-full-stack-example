@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="Scala-full-stack-example,Scala-full-stack-example.main,Scala-full-stack-example.test,scala-full-stack-example,scala-full-stack-example.app,scala-full-stack-example.common.coreJS,scala-full-stack-example.common.coreJVM,scala-full-stack-example.common.coreJVM.main,scala-full-stack-example.common.coreJVM.test,scala-full-stack-example.main,scala-full-stack-example.server,scala-full-stack-example.server.main,scala-full-stack-example.server.test,scala-full-stack-example.test" />
+    <profile name="sbt 2" modules="scala-full-stack-example.app.test">
+      <parameters>
+        <parameter value="-scalajs" />
+        <parameter value="-Xsemanticdb" />
+        <parameter value="-semanticdb-target" />
+        <parameter value="$PROJECT_DIR$/app/target/scala-3.3.1/test-meta" />
+      </parameters>
+    </profile>
+    <profile name="sbt 3" modules="scala-full-stack-example.app.main">
+      <parameters>
+        <parameter value="-scalajs" />
+        <parameter value="-Xsemanticdb" />
+        <parameter value="-semanticdb-target" />
+        <parameter value="$PROJECT_DIR$/app/target/scala-3.3.1/meta" />
+      </parameters>
+    </profile>
+    <profile name="sbt 4" modules="scala-full-stack-example.common.coreJS.main,scala-full-stack-example.common.coreJS.test">
+      <parameters>
+        <parameter value="-scalajs" />
+      </parameters>
+    </profile>
+  </component>
+</project>
